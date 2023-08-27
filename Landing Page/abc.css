@@ -1,0 +1,232 @@
+body, h1, h2, p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 100px;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+header::hover {
+    background-color: #c78336;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.logo:hover {
+    color: #ff33a3; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:hover{
+        color :rgb(41, 40, 40);
+        font-size: 20px;
+        overflow: hidden;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color:rgb(197, 165, 181);
+}
+
+.registration {
+    text-align: center;
+}
+
+.Jodi {
+    background-size: auto;
+    text-align: center;
+    padding: 90px 0;
+    color: #fff;
+    background-image: url(matrimonysite.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+
+.Jodi h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(22, 13, 13);
+    font-weight: bolder;
+    margin: 38px;
+    transition:  0.5s;
+    }
+
+.Jodi p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(6, 2, 7);
+}
+mark { 
+    background-color:lightcoral;
+    color: rgb(5, 3, 4);
+  }
+   
+.cta-button {
+    display: inline-block;
+    background-color: #d81a49;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+.cta-button:hover {
+    background-color: #E64A19;
+}
+.heading {
+    background-color:navajowhite;
+    white-space: unset;
+    line-height: 50px;
+    height: fit-content;
+    color: black;
+    margin: 50px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f3f3;
+    padding: 60px 70px;
+    height: 50px;
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.Stories {
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+    background-color: #f5e7e7;
+    padding: 80px 0;
+    height: 80x;
+}
+.story {
+    text-align: center;
+    max-width: 300px;
+}
+
+.story header{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.story p{
+    font-size: 15px;
+}
+.contact-info,
+.social-media,
+.app-link,
+.copyright {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.contact-info h3,
+.social-media h3,
+.app-link h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FF5733;
+}
+
+.contact-info p,
+.social-media ul,
+.app-link a,
+.copyright p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 5px;
+}
+
+.app-link img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom {
+    text-align: center;
+
+}
+.copyright p {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+    
+
+
+
+
