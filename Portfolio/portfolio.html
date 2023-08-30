@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PERSONAL PORTFOLIO WEBSITE </title>
+        <link rel="stylesheet"  href="cascade.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo"><img src="eee.png"</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#Skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi ,</h3>
+                <h1>I am Soniya Yete</h1>
+                <h3>And I'm an <span class="multiple-text"></span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/SONIYAYETE"><i class='bx bxl-github'></i></a>
+                    <a href="mailto: soniyayete@gmail.com"><i class='bx bxs-envelope'></i></a>
+                    <a href="https://instagram.com/soniya_2125?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.1007788"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <a href="My project.pdf" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="portpic.jpg" alt="">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                <h3>A Learner</h3>
+                <p>Currently, A learner Searching for a domain . Skilled Experience in C,C++,HTML,CSS,JAVASCRIPT,PYTHON</p>
+                 <a href="#"class="btn">Read More</a>   
+            </div>
+        </section>
+         <section class="Skills"id="Skills">
+            <h2 class="heading">My<span>Skills</span></h2>
+
+            <div class="Skills">
+                <li><h3>HTML</h3>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li><h3>CSS</h3>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li><h3>JAVASCRIPT</h3>
+                    <span class="bar"><span class="javascript"></span></span>
+                </li>
+                <li><h3>PYTHON</h3>
+                    <span class="bar"><span class="python"></span></span>
+                </li>
+                
+                
+            </div>
+        </section>
+        
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form action="#" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name">
+                    <input type="email" name="Email Address" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number"placeholder="Mobile Number">
+                    <input type="text"name="Email Subject" placeholder="Email Subject">
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message"class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Soniya Yete | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
+</html>
